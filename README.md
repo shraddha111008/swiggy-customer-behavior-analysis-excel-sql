@@ -120,6 +120,16 @@ swiggy-customer-behavior-analysis/
 4. Use Excel for additional validation (optional)
 
 ---
+## 🎯 Final Recommendations
+
+- Focus on mid-range pricing (₹100–₹300) as it drives the majority of orders  
+- Strengthen operations and marketing in high-demand cities to maximize revenue  
+- Promote high-rated dishes to improve customer trust and increase order volume  
+- Expand popular food categories (e.g., Indian, Chinese) to match customer demand  
+- Monitor and improve low-rated dishes to enhance overall customer satisfaction  
+- Use customer spending patterns to design targeted offers and discounts
+  
+---
 
 ## 📌 Conclusion
 
