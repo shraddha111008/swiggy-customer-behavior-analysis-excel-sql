@@ -4,11 +4,29 @@ Analyzing customer ordering patterns, pricing behavior, and restaurant performan
 
 ---
 
+## 📌 Table of Contents
+
+* Overview
+* Business Problem
+* Dataset
+* Tools & Technologies
+* Project Structure
+* Data Cleaning & Preparation
+* Data Modeling
+* Key Analysis Performed
+* Key Insights
+* Final Recommendations
+* How to Run This Project
+* Conclusion
+* Author
+
+---
+
 ## 📊 Overview
 
-This project focuses on analyzing Swiggy food delivery data to understand customer behavior, pricing trends, and order patterns.
+This project analyzes Swiggy food delivery data to understand customer behavior, pricing trends, and order patterns.
 
-The analysis is designed to identify key business drivers such as top-performing cities, popular food categories, and customer spending habits, enabling more effective and data-driven decision-making.
+The goal is to identify key business drivers such as top-performing cities, popular food categories, and customer spending habits for better decision-making.
 
 ---
 
@@ -21,81 +39,91 @@ The analysis is designed to identify key business drivers such as top-performing
 
 ---
 
+## 📂 Dataset
+
+* Dataset contains food delivery records including:
+
+  * State, City, Restaurant, Category, Dish
+  * Price, Ratings, and Order details
+* Data was cleaned and transformed for analysis
+
+---
+
 ## 🛠️ Tools & Technologies
 
 * SQL → Data cleaning, transformation, and analysis
-* Excel → Data validation and exploration
+* Excel → Data validation and initial exploration
 
 ---
 
 ## 📁 Project Structure
 
-* README.md → Project documentation
-* swiggy_analysis.sql → SQL queries and analysis
-* swiggy_data.csv → Dataset (optional)
-* Swiggy_Report.docx → Detailed report
+swiggy-customer-behavior-analysis/
+│
+├── README.md
+├── swiggy_analysis.sql
+├── swiggy_data.csv (optional)
+├── Swiggy_Report.docx
 
 ---
 
 ## 🧹 Data Cleaning & Preparation
 
-* Handled missing and blank values
-* Removed duplicate records
+* Removed null and blank values
+* Eliminated duplicate records using SQL
 * Ensured consistency across all fields
 
 ---
 
 ## 🏗️ Data Modeling
 
-A Star Schema was created to improve analysis:
-
-* Dimension tables: Date, Location, Restaurant, Category, Dish
-* Fact table: Orders
-
-This structure improves performance and simplifies reporting.
+* Implemented Star Schema
+* Dimension Tables: Date, Location, Restaurant, Category, Dish
+* Fact Table: Orders
 
 ---
 
 ## 📊 Key Analysis Performed
 
-* Total orders and revenue calculation
-* Trend analysis (monthly, quarterly, yearly)
-* Location-based analysis (top cities)
-* Category and dish performance
-* Price range segmentation
-* Ratings analysis
+* Total Orders and Revenue
+* Monthly, Quarterly, and Yearly Trends
+* Top Cities and Restaurants
+* Category and Dish Performance
+* Price Range Distribution
+* Ratings Analysis
 
 ---
 
 ## 📊 Key Insights
 
-* Most orders fall in the ₹100–₹300 price range
-* Demand is concentrated in a few major cities
-* Certain food categories dominate customer preference
+* Majority of orders fall in ₹100–₹300 range
+* Orders are concentrated in a few major cities
+* Popular categories dominate customer demand
 * Higher-rated dishes tend to receive more orders
 
 ---
 
-## 🎯 Actionable Recommendations
+## 🎯 Final Recommendations
 
 * Focus on mid-range pricing strategy
-* Expand in high-demand cities
+* Expand operations in high-demand cities
 * Promote high-rated dishes
-* Optimize category offerings
+* Optimize top-performing categories
+
+---
+
+## ⚙️ How to Run This Project
+
+1. Load dataset into SQL database
+2. Run `swiggy_analysis.sql` file
+3. Analyze outputs using SQL queries
+4. Use Excel for additional validation (optional)
 
 ---
 
 ## 📌 Conclusion
 
-This project shows how SQL-based analysis can transform raw data into meaningful insights that support business decisions in the food delivery industry.
-
----
-
-## ⚠️ Notice
-
-* Dataset used for learning purposes
-* Dataset may not be included due to size
-* Analysis performed using SQL and Excel only
+This project demonstrates how SQL and structured data modeling can be used to extract meaningful insights and support business decisions in the food delivery domain.
 
 ---
 
